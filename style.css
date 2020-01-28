@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow:300,400,600,700,800,900&display=swap');
+
+body{
+    margin: 0;
+    font-family: 'Barlow', sans-serif;
+    width: 100%;
+}
+header{
+    padding: 16px;
+    width: 100%;
+}
+
+.body{
+    width: 100%;
+}
+
+.body .body__introduction{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+}
+
+.body .body__introduction h1{
+    color: #2D3E50;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+    margin: 0;
+    text-align: center;
+}
+
+.body .body__introduction h2{
+    color: #2D3E50;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 24px;
+    margin: 8px 0;
+    text-align: center;
+}
+
+.body .body__introduction .introduction__data{
+    border-left: 10px solid #E64C66;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 32px;
+    padding: 0;
+    padding-left: 8px;
+    width: fit-content
+}
+
+.body .body__introduction .introduction__data h3{
+    color: #E64C66;
+    font-size: 18px;
+    line-height: 22px;
+    margin: 0;
+}
+
+.body .body__introduction .introduction__data p{
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 22px;
+    margin: 0;
+}
+
+.body .body__sympla{
+    margin-top: 32px;
+    padding: 8px;
+}
+
+.body .body__sympla .sympla__description{
+    background: #F1F1F1;
+    border-radius: 5px;
+    margin: 0 8px;
+    padding: 32px;
+}
+
+.body .body__sympla .sympla__description p{
+    color: #2D3E50;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.body .body__speaker{
+    padding: 16px;
+}
+
+.body .body__speaker h2{
+    color: #1BBC9B;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    margin: 16px 0;
+    text-align: center;
+}
+
+.body .body__speaker .speakers .speaker__card{
+    margin: 0;
+    padding: 16px;
+}
+
+.body .body__speaker .speakers .speaker__card .card__header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;;
+}
+
+.body .body__speaker .speakers .speaker__card .card__header .header__title{
+    font-size: 28px;
+    margin-left: 24px;
+}
+
+.body .body__speaker .speakers .speaker__card .card__header.inverse{
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+.body .body__speaker .speakers .speaker__card .card__header.inverse .header__title{
+    margin-right: 24px;
+    margin-left: 0;
+}
+
+
+.body .body__speaker .speakers .speaker__card .card__header .header__title h3{
+    font-weight: 600;
+    margin: 0;
+    line-height: 28px;
+}
+
+.body .body__speaker .speakers .speaker__card .card__header .header__title p{
+    color: #E64C66;
+    font-weight: 300;
+    font-size: 18px;
+    margin: 0;
+}
+
+.body .body__speaker .speakers .speaker__card .card__description{
+    color: #2D3E50;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.body .body__calendar{
+    background: #F1F1F1;
+    padding: 32px;
+    text-align: center;
+}
+
+.body .body__calendar .calendar__content{
+    color: #2D3E50;
+    font-size: 22px;
+    line-height: 28px;
+}
+
+.body .body__calendar .calendar__content h2{
+    text-decoration: underline;
+}
+
+.body .body__support{
+    color: #1BBC9B;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    padding: 32px;
+}
+
+footer{
+    align-items: center;
+    background: #2D3E50;
+    display: flex;
+    justify-content: center;
+    padding: 32px;
+}
