@@ -119,6 +119,7 @@ header {
 }
 .body .body__speaker .speakers .speaker__card img {
     float: left;
+    margin-bottom: 16px;
     margin-right: 24px;
     max-width: 40%;
 }
@@ -140,7 +141,6 @@ header {
 .body .body__speaker .speakers .speaker__card .card__content h3 {
     font-weight: 600;
     margin: 0;
-    margin-top: 30px;
     font-size: 25px;
 }
 
@@ -228,6 +228,9 @@ footer {
         margin: 0;
         width: 60%;
     }
+    .body .body__speaker {
+        max-width: 1080px;
+    }
     .body .body__speaker h2 {
         font-size: 32px;
         line-height: 39px;
@@ -242,6 +245,16 @@ footer {
         width: 30%;
     }
     .body .body__speaker .speakers .speaker__card img {
-        width: 300px;
+        width: 250px;
+        height: 100%;
+    }
+
+    .body .body__speaker .speakers .speaker__card {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+    }
+    .body .body__speaker .speakers .speaker__card.inverse {
+        flex-direction: row-reverse;
     }
 }
