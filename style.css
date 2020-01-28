@@ -1,28 +1,43 @@
-@import url('https://fonts.googleapis.com/css?family=Barlow:300,400,600,700,800,900&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Barlow:300,400,600,700,800,900&display=swap");
 
-body{
+body {
+    background-image: url("./assets/bg-center.png"), url("./assets/bg-left.svg"),
+        url("./assets/bg-event-work-sweet-work.png"),
+        url("./assets/bg-center.png"), url("./assets/bg-left.svg");
+    background-position: right, top 75% left, top right, bottom 10% right,
+        top 25% left;
+    background-size: 20%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 0;
-    font-family: 'Barlow', sans-serif;
+    font-family: "Barlow", sans-serif;
     width: 100%;
 }
-header{
+header {
     padding: 16px;
-    width: 100%;
+    max-width: 1280px;
+    width: calc(100% - 32px);
 }
 
-.body{
-    width: 100%;
-}
-
-.body .body__introduction{
+.body {
     align-items: center;
     display: flex;
     flex-direction: column;
+    width: 100%;
+}
+
+.body .body__introduction {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    max-width: 1080px;
     padding: 8px;
 }
 
-.body .body__introduction h1{
-    color: #2D3E50;
+.body .body__introduction h1 {
+    color: #2d3e50;
     font-weight: 900;
     font-size: 40px;
     line-height: 48px;
@@ -30,8 +45,8 @@ header{
     text-align: center;
 }
 
-.body .body__introduction h2{
-    color: #2D3E50;
+.body .body__introduction h2 {
+    color: #2d3e50;
     font-size: 20px;
     font-weight: 300;
     line-height: 24px;
@@ -39,56 +54,58 @@ header{
     text-align: center;
 }
 
-.body .body__introduction .introduction__data{
-    border-left: 10px solid #E64C66;
+.body .body__sympla {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin-top: 32px;
-    padding: 0;
-    padding-left: 8px;
-    width: fit-content
-}
-
-.body .body__introduction .introduction__data h3{
-    color: #E64C66;
-    font-size: 18px;
-    line-height: 22px;
-    margin: 0;
-}
-
-.body .body__introduction .introduction__data p{
-    font-size: 18px;
-    font-weight: 300;
-    line-height: 22px;
-    margin: 0;
-}
-
-.body .body__sympla{
     margin-top: 32px;
     padding: 8px;
+    max-width: 1080px;
 }
 
-.body .body__sympla .sympla__description{
-    background: #F1F1F1;
+.body .body__sympla .introduction__data {
+    border-left: 10px solid #e64c66;
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    justify-content: center;
+    line-height: 22px;
+    margin-bottom: 32px;
+    padding: 0;
+    padding-left: 8px;
+    width: fit-content;
+}
+
+.body .body__sympla .introduction__data h3 {
+    color: #e64c66;
+    margin: 0;
+}
+
+.body .body__sympla .introduction__data p {
+    font-weight: 300;
+    margin: 0;
+}
+
+.body .body__sympla .sympla__description {
+    background: #f1f1f1;
     border-radius: 5px;
     margin: 0 8px;
     padding: 32px;
-}
-
-.body .body__sympla .sympla__description p{
-    color: #2D3E50;
-    font-weight: 300;
     font-size: 13px;
     line-height: 18px;
 }
 
-.body .body__speaker{
+.body .body__sympla .sympla__description p {
+    color: #2d3e50;
+    font-weight: 300;
+}
+
+.body .body__speaker {
     padding: 16px;
 }
 
-.body .body__speaker h2{
-    color: #1BBC9B;
+.body .body__speaker h2 {
+    color: #1bbc9b;
     font-weight: normal;
     font-size: 24px;
     line-height: 29px;
@@ -96,80 +113,135 @@ header{
     text-align: center;
 }
 
-.body .body__speaker .speakers .speaker__card{
+.body .body__speaker .speakers .speaker__card {
     margin: 0;
     padding: 16px;
 }
-
-.body .body__speaker .speakers .speaker__card .card__header{
-    display: flex;
-    flex-direction: row;
-    align-items: center;;
+.body .body__speaker .speakers .speaker__card img {
+    float: left;
+    margin-right: 24px;
+    max-width: 40%;
 }
 
-.body .body__speaker .speakers .speaker__card .card__header .header__title{
+.body .body__speaker .speakers .speaker__card .card__content {
     font-size: 28px;
+}
+
+.body .body__speaker .speakers .speaker__card.inverse img {
+    float: right;
+    margin-right: 0;
     margin-left: 24px;
 }
 
-.body .body__speaker .speakers .speaker__card .card__header.inverse{
-    flex-direction: row-reverse;
+.body .body__speaker .speakers .speaker__card.inverse .card__content {
     text-align: right;
 }
 
-.body .body__speaker .speakers .speaker__card .card__header.inverse .header__title{
-    margin-right: 24px;
-    margin-left: 0;
-}
-
-
-.body .body__speaker .speakers .speaker__card .card__header .header__title h3{
+.body .body__speaker .speakers .speaker__card .card__content h3 {
     font-weight: 600;
     margin: 0;
-    line-height: 28px;
+    margin-top: 30px;
+    font-size: 25px;
 }
 
-.body .body__speaker .speakers .speaker__card .card__header .header__title p{
-    color: #E64C66;
+.body .body__speaker .speakers .speaker__card .card__content p {
+    color: #e64c66;
     font-weight: 300;
     font-size: 18px;
     margin: 0;
 }
 
-.body .body__speaker .speakers .speaker__card .card__description{
-    color: #2D3E50;
+.body .body__speaker .speakers .speaker__card .card__description {
+    padding: 8px 0;
+}
+
+.body .body__speaker .speakers .speaker__card .card__description p {
+    color: #2d3e50;
     font-size: 18px;
+    margin: 8px 0;
     line-height: 22px;
 }
 
-.body .body__calendar{
-    background: #F1F1F1;
+.body .body__calendar {
+    background: #f1f1f1;
     padding: 32px;
     text-align: center;
+    width: calc(100% - 64px);
 }
 
-.body .body__calendar .calendar__content{
-    color: #2D3E50;
+.body .body__calendar .calendar__content {
+    color: #2d3e50;
     font-size: 22px;
     line-height: 28px;
 }
 
-.body .body__calendar .calendar__content h2{
+.body .body__calendar .calendar__content h2 {
     text-decoration: underline;
 }
 
-.body .body__support{
-    color: #1BBC9B;
+.body .body__support {
+    color: #1bbc9b;
     font-weight: 400;
     font-size: 18px;
     line-height: 22px;
     padding: 32px;
 }
 
-footer{
+footer {
     align-items: center;
-    background: #2D3E50;
+    background: #2d3e50;
     display: flex;
     justify-content: center;
     padding: 32px;
+    width: calc(100% - 64px);
+}
+
+@media (min-width: 768px) {
+    .mobile {
+        display: none;
+    }
+    body {
+        background-size: 7%;
+    }
+
+    .body .body__introduction h1 {
+        font-size: 84px;
+        line-height: 100px;
+    }
+    .body .body__introduction h2 {
+        font-size: 42px;
+        line-height: 50px;
+    }
+    .body .body__sympla {
+        display: block;
+        flex-direction: unset;
+    }
+    .body .body__sympla .introduction__data {
+        float: left;
+        font-size: 32px;
+        line-height: 38px;
+    }
+    .body .body__sympla .sympla__description {
+        float: left;
+        font-size: 16px;
+        line-height: 19px;
+        margin: 0;
+        width: 60%;
+    }
+    .body .body__speaker h2 {
+        font-size: 32px;
+        line-height: 39px;
+        text-align: left;
+    }
+    .body .body__calendar {
+        max-width: 1080px;
+    }
+    #sympla-widget-773263 {
+        float: right;
+        height: fit-content;
+        width: 30%;
+    }
+    .body .body__speaker .speakers .speaker__card img {
+        width: 300px;
+    }
 }

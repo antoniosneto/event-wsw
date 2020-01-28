@@ -1,14 +1,12 @@
-getCard = speaker => {
+getCard = (speaker) => {
     return `
-    <div class="speaker__card">
-        <div class="card__header ${speaker.class}">
-            <img src="${speaker.img}" alt="Imagem de ${speaker.title}, ${speaker.subtitle}">
-            <div class="header__title">
-                <h3>${speaker.title}</h3>
-                <p>${speaker.subtitle}</p>
-            </div>
+    <div class="speaker__card ${speaker.class}">
+        <img src="${speaker.img}" alt="Imagem de ${speaker.title}, ${speaker.subtitle}">
+        <div class="card__content">
+            <h3>${speaker.title}</h3>
+            <p>${speaker.subtitle}</p>
+            <div class="card__description">${speaker.description}</div>
         </div>
-        <div class="card__description">${speaker.description}</div>
     </div>
     `;
 };
