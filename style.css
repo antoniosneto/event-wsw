@@ -89,7 +89,7 @@ header {
 .body .body__sympla .sympla__description {
     background: #f1f1f1;
     border-radius: 5px;
-    margin: 0 8px;
+    margin: 16px 8px;
     padding: 32px;
     font-size: 13px;
     line-height: 18px;
@@ -184,7 +184,14 @@ header {
     font-weight: 400;
     font-size: 18px;
     line-height: 22px;
-    padding: 32px;
+    margin-bottom: 16px;
+    padding: 8px;
+    width: calc(100% - 16px);
+}
+
+.body .body__support div img {
+    margin: 16px 0;
+    margin-right: 64px;
 }
 
 footer {
@@ -227,6 +234,9 @@ footer {
         line-height: 19px;
         margin: 0;
         width: 60%;
+    }
+    .body__support {
+        max-width: 1144px;
     }
     .body .body__speaker {
         max-width: 1080px;

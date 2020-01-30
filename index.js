@@ -30,11 +30,11 @@ const speakers = [
     },
 
     {
-        img: "./assets/pedro-vasconselos-palestrando.png",
-        title: "Pedro <br class='mobile'>Vasconselos",
-        subtitle: "COO da Beer or Coffee",
+        img: "./assets/paulo-emilio.png",
+        title: "Paulo Emílio",
+        subtitle: "Diretor da Sales In Mind",
         description:
-            "<p>Agora sim, um texto falando sobre esse evento, que vamos conseguir bater a meta e chamar todos os convidados, espero que tudo dê certo.<p>E aqui, não fique de fora em.</p></p>"
+            "<p>Adminstrador de Empresas, Especialista em Gestão Estratégica de Negócios pela UFMG, Pós-Graduado em Gestão de Projetos pelo IETEC e Mestre em Administração pela FPL.</p><p>Trajetória de mais de 34 anos ocupando posições de liderança em grandes e médias empresas com vasta experiência em gestão, vendas e marketing.</p><p>Foi Gerente Regional da Unidas Rent a Car e da Águia Branca Cargas em Minas Gerais. É Coordenador e Professor do Curso de Pós-Graduação em Engenharia de Vendas, Diretor de Educação e Operações do IETEC, e Diretor da Sales in Mind Consultoria e Treinamento em Vendas.</p>"
     }
 ];
 
